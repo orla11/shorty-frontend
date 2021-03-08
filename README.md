@@ -1,4 +1,9 @@
-# shorty
+# Shorty Web Application Frontend
+
+![shorty](https://orla.dev/wp-content/uploads/2018/04/template-300x225.png)
+
+A simple web application made with Nuxt.js to interact with the shorty backend (see repo).
+This is an educatioal project made with Nuxt.js and VueJS (not ready for production)
 
 ## Build Setup
 
