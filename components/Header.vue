@@ -24,7 +24,7 @@ import {mdbRow, mdbCol} from 'mdbvue';
 
 <style scoped>
 .header{
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 10%;
 }
 

@@ -1,5 +1,5 @@
 <template>
-    <mdb-row class="footer" style="text-align: center; margin-top: 15%">
+    <mdb-row class="footer" style="text-align: center; margin-top: 8%">
       <mdb-col col="6" sm="4">
         <mdb-btn tag="a" floating class="btn-tw" icon="twitter" fab size="lg" href="https://twitter.com/0rla3" />
         <mdb-btn tag="a" floating class="btn-in" icon="linkedin" fab size="lg" href="https://linkedin.com/in/orlanfran" />
