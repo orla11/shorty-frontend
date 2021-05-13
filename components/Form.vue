@@ -33,19 +33,29 @@
     },
     methods: {
         async shorten({$axios}) {
-            if(this.isValidUrl(this.inputUrl)){
-              console.log("hello")
-              this.isShortening = true;
-              try {
-                this.fetchingResult = await $axios.$post("/", {
-                  originalUrl: this.inputUrl
-                });
-              }catch(error){
-                this.fetchingError = true;
-                this.fetchingErrorMessage = error.response.data;
-              }
-              this.isShortening = false;
-            }
+
+          // Temporary error message
+          // ToDo: deploy backend
+          this.isShortening = true;
+          setTimeout(() => {
+            this.isShortening = false;
+            this.fetchingError = true;
+            this.fetchingErrorMessage = "500 Server Temporary offline";
+          }, 1200);
+          
+
+          // if(this.isValidUrl(this.inputUrl)){
+          //   this.isShortening = true;
+          //   try {
+          //     this.fetchingResult = await $axios.$post("/", {
+          //       originalUrl: this.inputUrl
+          //     });
+          //   }catch(error){
+          //     this.fetchingError = true;
+          //     this.fetchingErrorMessage = error.response.data;
+          //   }
+          //   this.isShortening = false;
+          // }
         },
         isValidUrl(url) {
           const pattern = new RegExp(/[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/ig);

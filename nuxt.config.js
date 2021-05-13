@@ -27,7 +27,7 @@ export default {
 
   publicRuntimeConfig: {
     axios: {
-      baseUrl: "http://localhost:8081/api/v1/shorty"
+      baseUrl: "https://shorty-be:8081/api/v1/shorty"
     }
   },
 
